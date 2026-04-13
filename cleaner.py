@@ -5,5 +5,7 @@ def clean_data(data):
     from your original function.
     """
     clean_data = []
-    ...
+    for x in data:
+        if x != "mnutes\n":
+            clean_data.append(float(x.strip))
     return clean_data
